@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { Container, ThemeProvider } from "@material-ui/core";
+import Brand from "./components/Brand/Brand";
+import Contact from "./components/Contact/Contact";
+import NavBar from "./components/NavBar";
+import Resume from "./components/Resume/Resume";
+import Projects from "./components/Project/Project";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <ThemeProvider>
+        <NavBar />
+        <main>
+          <Container maxWidth="md" style={{ textAlign: "center" }}>
+            <Brand />
+            <Projects />
+            <Resume />
+            <Contact />
+          </Container>
+        </main>
+      </ThemeProvider>
     </div>
   );
-}
+};
 
 export default App;
