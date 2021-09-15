@@ -2,4 +2,4 @@
 
 ## Material ui is used for its design.
 
-## All other front end components are done without any other library.
+## All other front end components are created without any other library.
