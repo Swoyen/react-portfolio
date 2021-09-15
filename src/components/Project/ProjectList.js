@@ -1,15 +1,31 @@
 import { Grid } from "@material-ui/core";
-import { useTheme } from "@material-ui/styles";
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { projects } from "../../data/projects";
 import ProjectListItem from "./ProjectListItem";
 
-const projects = ["a", "b", "c", "D", "E"];
-
-const ProjectList = () => {
+const ProjectList = ({ selectedLanguagesId }) => {
+  const [projectList, setProjectList] = useState(projects);
+  const [selectedProjectList, setSelectedProjectList] = useState([]);
+  useEffect(() => {
+    if (selectedLanguagesId.length === 0) {
+      setSelectedProjectList(projectList);
+    } else {
+      if (selectedLanguagesId.some((sl) => sl === 0)) {
+        setSelectedProjectList(projectList);
+      } else {
+        var filterProjectList = projectList.filter((project) =>
+          selectedLanguagesId.every((slid) =>
+            project.languages.some((languageId) => slid === languageId)
+          )
+        );
+        setSelectedProjectList(filterProjectList);
+      }
+    }
+  }, [selectedLanguagesId, selectedLanguagesId.length]);
   return (
-    <Grid container spacing={5} justifyContent="center">
-      {projects.map((project) => (
-        <ProjectListItem key={project} />
+    <Grid container spacing={4} justifyContent="center">
+      {selectedProjectList.map((project) => (
+        <ProjectListItem key={project.id} project={project} />
       ))}
     </Grid>
   );

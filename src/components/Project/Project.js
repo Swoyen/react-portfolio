@@ -1,26 +1,26 @@
 import { Chip, Typography } from "@material-ui/core";
 import React, { useState } from "react";
-import Section from "../../sections/Section";
+import { languages } from "../../data/projects";
+import Section from "../../controls/Section";
 import ProjectLanguages from "./ProjectLanguages";
 import ProjectList from "./ProjectList";
+import Subtitle from "../../controls/Subtitle";
 
 const Projects = () => {
-  const [languages, setLanguages] = useState([
-    { id: 0, name: "React", selected: false },
-    { id: 1, name: ".NET Core", selected: false },
-    { id: 2, name: "Full-stack", selected: false },
-    { id: 3, name: "JavaScript", selected: false },
-  ]);
+  const [languageList, setLanguageList] = useState(languages);
+  const [selectedLanguagesIdList, setSelectedLanguagesIdList] = useState([]);
   return (
     <Section heading="Projects">
-      <Typography color="textSecondary" variant="body2">
-        Check out my work
-      </Typography>
+      <Subtitle>Check out my work</Subtitle>
       <Typography gutterBottom color="textSecondary" variant="body2">
         If you have any questions, feel free to ask for more info
       </Typography>
-      <ProjectLanguages languages={languages} setLanguages={setLanguages} />
-      <ProjectList />
+      <ProjectLanguages
+        languages={languageList}
+        selectedLanguagesId={selectedLanguagesIdList}
+        setSelectedLanguagesId={setSelectedLanguagesIdList}
+      />
+      <ProjectList selectedLanguagesId={selectedLanguagesIdList} />
     </Section>
   );
 };
