@@ -1,5 +1,4 @@
 import { Typography, makeStyles } from "@material-ui/core";
-import { useTheme } from "@material-ui/core/styles";
 import React from "react";
 
 const useStyles = makeStyles((theme) => ({
@@ -13,7 +12,6 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const ResumeSkillRow = ({ skills }) => {
-  const theme = useTheme();
   const classes = useStyles();
   return skills.map((skill, index) => {
     return (

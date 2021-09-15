@@ -1,4 +1,3 @@
-import { Typography } from "@material-ui/core";
 import React from "react";
 import Subheading from "../../controls/Subheading";
 import { education } from "../../data/resume";

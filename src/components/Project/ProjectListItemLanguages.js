@@ -1,7 +1,7 @@
-import { Chip, Grid, Typography, useTheme } from "@material-ui/core";
+import { Chip, Grid, useTheme } from "@material-ui/core";
 import { makeStyles } from "@material-ui/styles";
 
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 const useStyles = makeStyles((theme) => ({
   root: {},
@@ -14,7 +14,8 @@ const useStyles = makeStyles((theme) => ({
 
 const ProjectListItemLanguages = ({ languageIds, allLanguages }) => {
   const classes = useStyles();
-  const [totalLanguages, setTotalLanguages] = useState(languageIds.length);
+  const totalLanguages = languageIds.length;
+  // eslint-disable-next-line
   const [threeLanguages, setThreeLanguages] = useState(() => {
     if (languageIds.length > 0) {
       var languages = [];
@@ -23,7 +24,7 @@ const ProjectListItemLanguages = ({ languageIds, allLanguages }) => {
         i < (languageIds.length >= 3 ? 3 : languageIds.length);
         i++
       ) {
-        var languageId = languageIds[i];
+        let languageId = languageIds[i];
         languages.push(
           allLanguages.find((language) => language.id === languageId)
         );
@@ -44,7 +45,7 @@ const ProjectListItemLanguages = ({ languageIds, allLanguages }) => {
               size="small"
               // variant="p"
               style={{
-                marginLeft: i == 0 ? theme.spacing(0) : theme.spacing(0.2),
+                marginLeft: i === 0 ? theme.spacing(0) : theme.spacing(0.2),
                 marginRight: theme.spacing(0.2),
                 marginBottom: theme.spacing(0.5),
               }}

@@ -1,4 +1,4 @@
-import { Chip, Typography } from "@material-ui/core";
+import { Typography } from "@material-ui/core";
 import React, { useState } from "react";
 import { languages } from "../../data/projects";
 import Section from "../../controls/Section";
@@ -6,8 +6,8 @@ import ProjectLanguages from "./ProjectLanguages";
 import ProjectList from "./ProjectList";
 import Subtitle from "../../controls/Subtitle";
 
+const languageList = languages;
 const Projects = () => {
-  const [languageList, setLanguageList] = useState(languages);
   const [selectedLanguagesIdList, setSelectedLanguagesIdList] = useState([]);
   return (
     <Section heading="Projects">

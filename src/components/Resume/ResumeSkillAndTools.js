@@ -1,8 +1,6 @@
 import { Grid, useTheme } from "@material-ui/core";
-import { SlowMotionVideo } from "@material-ui/icons";
 import React from "react";
 import Subheading from "../../controls/Subheading";
-import Subtitle from "../../controls/Subtitle";
 import { skillsRow1, skillsRow2, skillsRow3 } from "../../data/resume";
 import ResumeSkillRow from "./ResumeSkillRow";
 

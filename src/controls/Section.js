@@ -1,4 +1,4 @@
-import { makeStyles, Typography, useTheme } from "@material-ui/core";
+import { makeStyles, Typography } from "@material-ui/core";
 import React from "react";
 
 const useStyles = makeStyles((theme) => ({
@@ -35,7 +35,6 @@ const useStyles = makeStyles((theme) => ({
 
 const Section = (props) => {
   const classes = useStyles();
-  const theme = useTheme();
   return (
     <section id={props.heading} className={classes.section}>
       {props.heading ? (

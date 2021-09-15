@@ -8,8 +8,6 @@ import {
   useTheme,
 } from "@material-ui/core";
 import SendRoundedIcon from "@material-ui/icons/SendRounded";
-import emailjs from "emailjs-com";
-import emailKey from "./emailKey";
 import ErrorMessage from "../../controls/ErrorMessage";
 
 const defaultValues = { email: "", fullname: "", message: "" };

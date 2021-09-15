@@ -7,7 +7,6 @@ import {
   Grid,
   CardMedia,
   Typography,
-  Chip,
   Fade,
 } from "@material-ui/core";
 import React, { useState } from "react";

@@ -3,10 +3,7 @@ import {
   Toolbar,
   IconButton,
   Typography,
-  Grid,
   makeStyles,
-  ButtonGroup,
-  Button,
   Tooltip,
 } from "@material-ui/core";
 import GitHubIcon from "@material-ui/icons/GitHub";
@@ -90,7 +87,7 @@ const NavBar = () => {
         <Tooltip title="View Github Profile">
           <IconButton
             aria-label="open github"
-            onClick={() => handleOpen("https://www.linkedin.com/in/swoyen")}
+            onClick={() => handleOpen("https://github.com/Swoyen")}
           >
             <GitHubIcon />
           </IconButton>

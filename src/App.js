@@ -9,7 +9,6 @@ import Contact from "./components/Contact/Contact";
 import NavBar from "./components/NavBar";
 import Resume from "./components/Resume/Resume";
 import Projects from "./components/Project/Project";
-import { orange } from "@material-ui/core/colors";
 
 const theme = createTheme({
   typography: {

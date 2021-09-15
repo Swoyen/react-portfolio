@@ -3,8 +3,8 @@ import React, { useEffect, useState } from "react";
 import { projects } from "../../data/projects";
 import ProjectListItem from "./ProjectListItem";
 
+const projectList = projects;
 const ProjectList = ({ selectedLanguagesId }) => {
-  const [projectList, setProjectList] = useState(projects);
   const [selectedProjectList, setSelectedProjectList] = useState([]);
   useEffect(() => {
     if (selectedLanguagesId.length === 0) {
