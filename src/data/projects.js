@@ -5,7 +5,9 @@ export const projects = [
     languages: [2, 5, 4, 3],
     description:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum reprehenderit veniam maxime. Quidem, aut illum. Ullam incidunt recusandae nostrum vel!",
-    imgSrc: "/image/0.jpg",
+    imgSrc: "/image/BugTracker.png",
+    websiteHref: "https://bugissuetracker.netlify.app/",
+    link: "/issuetracker",
   },
   {
     id: 1,

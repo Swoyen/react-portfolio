@@ -3,14 +3,16 @@ import { useTheme } from "@material-ui/styles";
 import React from "react";
 
 const Subheading = (props) => {
+  let { children, ...rest } = props;
   const theme = useTheme();
   return (
     <Typography
       style={{ marginTop: theme.spacing(8), textTransform: "uppercase" }}
       variant="h5"
-      color="initial"
+      color="textPrimary"
+      {...rest}
     >
-      {props.children}
+      {children}
     </Typography>
   );
 };

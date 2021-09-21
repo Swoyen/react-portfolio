@@ -22,6 +22,7 @@ const ProjectList = ({ selectedLanguagesId }) => {
       }
     }
   }, [selectedLanguagesId, selectedLanguagesId.length]);
+
   return (
     <Grid container spacing={4} justifyContent="center">
       {selectedProjectList.map((project) => (

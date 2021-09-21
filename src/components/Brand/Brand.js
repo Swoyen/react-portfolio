@@ -8,28 +8,25 @@ const Brand = () => {
     <Section id="Brand">
       <Grid
         container
-        style={{ maxWidth: "1200px" }}
+        style={{
+          maxWidth: "1200px",
+          paddingTop: theme.spacing(5),
+          paddingBottom: theme.spacing(5),
+        }}
         justifyContent="center"
         spacing={2}
       >
-        <Grid item>
-          <Avatar
-            src="/image/profilePic.jpg"
-            variant="rounded"
-            style={{ width: 250, height: 400, filter: "grayscale(50%)" }}
-          />
-        </Grid>
         <Grid
           item
           xs={11}
-          sm={6}
+          sm={5}
           container
           direction="column"
           justifyContent="center"
         >
           <Grid item>
             <Typography variant="h4" align="left" gutterBottom>
-              Hi! My name is Swoyen. <br /> I'm a Software Developer
+              Hi! My name is Swoyen. <br /> I'm a Software Developer.
             </Typography>
           </Grid>
           <Grid item>
@@ -43,7 +40,7 @@ const Brand = () => {
             >
               I am a junior web developer based in Adelaide. I have less than a
               year of developing applications and I am very interested in
-              creating weg apps. I am open for new opportunities and interesting
+              creating web apps. I am open for new opportunities and interesting
               projects.
             </Typography>
           </Grid>

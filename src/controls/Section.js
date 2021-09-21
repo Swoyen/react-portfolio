@@ -43,6 +43,7 @@ const Section = (props) => {
           gutterBottom
           component="div"
           align="center"
+          color="textPrimary"
           className={classes.headingText}
         >
           {props.heading}
