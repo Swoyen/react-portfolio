@@ -9,15 +9,15 @@ export const projects = [
     websiteHref: "https://bugissuetracker.netlify.app/",
     link: "/issuetracker",
   },
-  {
-    id: 1,
-    name: "Restaurant System",
-    languages: [2, 4, 5],
-    description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum reprehenderit veniam maxime. Quidem, aut illum. Ullam incidunt recusandae nostrum vel!",
+  // {
+  //   id: 1,
+  //   name: "Restaurant System",
+  //   languages: [2, 4, 5],
+  //   description:
+  //     "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum reprehenderit veniam maxime. Quidem, aut illum. Ullam incidunt recusandae nostrum vel!",
 
-    imgSrc: "/image/1.jpg",
-  },
+  //   imgSrc: "/image/1.jpg",
+  // },
   {
     id: 2,
     name: "Portfolio v1",
@@ -28,32 +28,32 @@ export const projects = [
     websiteHref: "https://swoyen.github.io/Portfolio/",
     imgSrc: "/image/PortfolioV1.png",
   },
-  {
-    id: 3,
-    name: "Youtube Player",
-    languages: [2, 4],
-    description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum reprehenderit veniam maxime. Quidem, aut illum. Ullam incidunt recusandae nostrum vel!",
-    githubHref: "",
-    websiteHref: "",
-    imgSrc: "/image/3.jpg",
-  },
-  {
-    id: 4,
-    name: "Weather App",
-    languages: [2, 4],
-    description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum reprehenderit veniam maxime. Quidem, aut illum. Ullam incidunt recusandae nostrum vel!",
-    imgSrc: "/image/4.jpg",
-  },
-  {
-    id: 5,
-    name: "Sorting Visualizer",
-    languages: [2, 4],
-    description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum reprehenderit veniam maxime. Quidem, aut illum. Ullam incidunt recusandae nostrum vel!",
-    imgSrc: "/image/5.jpg",
-  },
+  // {
+  //   id: 3,
+  //   name: "Youtube Player",
+  //   languages: [2, 4],
+  //   description:
+  //     "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum reprehenderit veniam maxime. Quidem, aut illum. Ullam incidunt recusandae nostrum vel!",
+  //   githubHref: "",
+  //   websiteHref: "",
+  //   imgSrc: "/image/3.jpg",
+  // },
+  // {
+  //   id: 4,
+  //   name: "Weather App",
+  //   languages: [2, 4],
+  //   description:
+  //     "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum reprehenderit veniam maxime. Quidem, aut illum. Ullam incidunt recusandae nostrum vel!",
+  //   imgSrc: "/image/4.jpg",
+  // },
+  // {
+  //   id: 5,
+  //   name: "Sorting Visualizer",
+  //   languages: [2, 4],
+  //   description:
+  //     "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum reprehenderit veniam maxime. Quidem, aut illum. Ullam incidunt recusandae nostrum vel!",
+  //   imgSrc: "/image/5.jpg",
+  // },
 ];
 
 export const languages = [
