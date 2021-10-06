@@ -1,4 +1,4 @@
-import { Avatar, Button, Grid, Typography, useTheme } from "@material-ui/core";
+import { Button, Grid, Typography, useTheme } from "@material-ui/core";
 import React from "react";
 import Section from "../../controls/Section";
 import MailOutlineRoundedIcon from "@material-ui/icons/MailOutlineRounded";

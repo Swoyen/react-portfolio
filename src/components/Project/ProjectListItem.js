@@ -22,7 +22,7 @@ import { Link } from "react-router-dom";
 const allLanguages = languages;
 const ProjectListItem = ({ project }) => {
   const theme = useTheme();
-  const [darkMode, setDarkMode] = useContext(DarkModeContext);
+  const [darkMode] = useContext(DarkModeContext);
 
   const [buttonsVisible, setButtonsVisible] = useState(false);
 

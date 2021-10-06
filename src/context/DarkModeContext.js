@@ -1,4 +1,4 @@
-import { createContext, useReducer } from "react";
+import { createContext } from "react";
 import { useLocalStorage } from "../hooks/useLocalStorage";
 
 export const DarkModeContext = createContext();
@@ -14,13 +14,13 @@ export const DarkModeProvider = (props) => {
   );
 };
 
-const darkModeReducer = (state, action) => {
-  switch (action.type) {
-    case "LIGHTMODE":
-      return { darkMode: false };
-    case "DARKMODE":
-      return { darkMode: true };
-    default:
-      return state;
-  }
-};
+// const darkModeReducer = (state, action) => {
+//   switch (action.type) {
+//     case "LIGHTMODE":
+//       return { darkMode: false };
+//     case "DARKMODE":
+//       return { darkMode: true };
+//     default:
+//       return state;
+//   }
+// };

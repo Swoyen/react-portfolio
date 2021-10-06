@@ -4,20 +4,10 @@ import {
   CssBaseline,
   ThemeProvider,
 } from "@material-ui/core";
-import Brand from "./components/Brand/Brand";
-import Contact from "./components/Contact/Contact";
 import NavBar from "./components/NavBar";
-import Resume from "./components/Resume/Resume";
-import Projects from "./components/Project/Project";
-import { DarkModeContext, DarkModeProvider } from "./context/DarkModeContext";
+import { DarkModeContext } from "./context/DarkModeContext";
 import { useContext } from "react";
-import {
-  blue,
-  yellow,
-  green,
-  blueGrey,
-  purple,
-} from "@material-ui/core/colors";
+import { blueGrey, purple } from "@material-ui/core/colors";
 
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Main from "./pages/Main";

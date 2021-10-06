@@ -9,7 +9,7 @@ import {
 import { ArrowBackIosRounded } from "@material-ui/icons";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import { useLocation, useRouteMatch } from "react-router";
+import { useLocation } from "react-router";
 import { Link } from "react-router-dom";
 import { DarkModeSwitch } from "./DarkModeSwitch";
 
@@ -27,7 +27,6 @@ const NavBar = () => {
     window.open(url, "_blank").focus();
   };
 
-  console.log(location);
   return (
     <AppBar color="primary" variant="outlined" position="static">
       <Toolbar>
