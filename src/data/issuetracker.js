@@ -8,8 +8,8 @@ export const features = [
   "Authentication handled by Microsoft Authentication Library.",
 ];
 
-export const issueTrackerFrontEnd =
-  "https://www.https://github.com/Swoyen/bug-tracker";
+export const issueTrackerFrontEnd = "https://www.github.com/Swoyen/bug-tracker";
 
-export const issueTrackerBackEnd =
-  "https://www.https://github.com/Swoyen/bug-tracker";
+export const issueTrackerBackEnd = "https://www.github.com/Swoyen/bug-tracker";
+
+export const issueTrackerDemo = "https://bugissuetracker.netlify.app/#/";

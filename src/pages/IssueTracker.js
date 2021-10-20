@@ -3,7 +3,12 @@ import React, { useEffect } from "react";
 import IList from "../controls/IList";
 import Section from "../controls/Section";
 import Subheading from "../controls/Subheading";
-import { features } from "../data/issuetracker";
+import {
+  features,
+  issueTrackerBackEnd,
+  issueTrackerDemo,
+  issueTrackerFrontEnd,
+} from "../data/issuetracker";
 
 const featureList = features;
 
@@ -31,7 +36,7 @@ const IssueTracker = () => {
         </Grid>
         <Grid item>
           <Button
-            onClick={() => handleOpen()}
+            onClick={() => handleOpen(issueTrackerDemo)}
             variant="outlined"
             color="primary"
           >
@@ -51,7 +56,7 @@ const IssueTracker = () => {
         </Grid>
         <Grid item>
           <Button
-            onClick={() => handleOpen()}
+            onClick={() => handleOpen(issueTrackerFrontEnd)}
             variant="outlined"
             color="primary"
           >
@@ -60,7 +65,7 @@ const IssueTracker = () => {
         </Grid>
         <Grid item>
           <Button
-            onClick={() => handleOpen()}
+            onClick={() => handleOpen(issueTrackerBackEnd)}
             variant="outlined"
             color="primary"
           >
